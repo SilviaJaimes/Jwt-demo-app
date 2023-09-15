@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+
 namespace ApiJwt.Dtos;
 public class RegisterDto
 {

@@ -4,11 +4,11 @@ using Persistence;
 
 namespace Application.Repository;
 
-public class RolRepository : GenericRepository<Rol>, IRolRepository
+public class MarcaRepository : GenericRepository<Marca>, IMarca
 {
     private readonly JwtAppContext _context;
 
-    public RolRepository(JwtAppContext context) : base(context)
+    public MarcaRepository(JwtAppContext context) : base(context)
     {
         _context = context;
     }

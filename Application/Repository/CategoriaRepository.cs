@@ -3,12 +3,11 @@ using Domain.Interfaces;
 using Persistence;
 
 namespace Application.Repository;
-
-public class RolRepository : GenericRepository<Rol>, IRolRepository
+public class CategoriaRepository : GenericRepository<Categoria>, ICategoria
 {
     private readonly JwtAppContext _context;
 
-    public RolRepository(JwtAppContext context) : base(context)
+    public CategoriaRepository(JwtAppContext context) : base(context)
     {
         _context = context;
     }

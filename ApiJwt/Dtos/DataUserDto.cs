@@ -2,8 +2,8 @@ using System.Text.Json.Serialization;
 
 namespace ApiJwt.Dtos;
 
-    public class DataUserDto
-    {
+public class DataUserDto
+{
     public string Message { get; set; }
     public bool IsAuthenticated { get; set; }
     public string UserName { get; set; }
@@ -14,4 +14,4 @@ namespace ApiJwt.Dtos;
     [JsonIgnore] // ->this attribute restricts the property to be shown in the result
     public string RefreshToken { get; set; }
     public DateTime RefreshTokenExpiration { get; set; }        
-    }
+}
